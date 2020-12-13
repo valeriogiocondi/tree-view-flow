@@ -1,0 +1,55 @@
+.node {
+  position: relative;
+  width: 100px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #777;
+  color: #000;
+  font-size: 14px;
+  text-align: center;
+}
+.node .toggle-children {
+  position: absolute;
+  right: 0px;
+  margin-right: 8px;
+  margin-top: -5px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.node .toggle-children.no-children {
+  display: none;
+}
+
+.children-wrapper.hidden {
+  display: none;
+}
+
+.line-h {
+  position: absolute;
+  width: 48px;
+  border: dashed #000 1px;
+  margin-top: 30px;
+}
+
+.line-v {
+  position: absolute;
+  height: 50px;
+  margin-top: -20px;
+  margin-left: 20px;
+  border: dashed #000 1px;
+}
+.line-v.lev-0 {
+  height: 75px;
+  margin-top: -45px;
+}
+ul > li:not(.index-0) > .line-v:not(.lev-0) {
+  height: 75px;
+  margin-top: -45px;
+}
+.line-hidden {
+  opacity: 0;
+}
